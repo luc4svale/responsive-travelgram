@@ -7,6 +7,10 @@
   margin-inline: auto;
 }
 
+.bg-surface-color {
+  background-color: var(--surface-color);
+}
+
 .desktop-only {
   display: none;
  }

@@ -1,4 +1,4 @@
-body > nav {
+nav {
   background-color: var(--surface-color);
   padding-block: 1rem;
 
@@ -8,12 +8,23 @@ body > nav {
 
   & .avatar {
     width: 2.5rem;
-    aspect-ratio: 1/1;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
   }
 }
 
 @media (min-width: 48rem) {
-  body > nav {
+  nav {
     padding-block: 1.25rem;
+  }
+}
+
+
+@media (min-width: 64rem) {
+  nav {
+    ul li:not(img) {
+      padding: 0.25rem;
+    }
   }
 }
