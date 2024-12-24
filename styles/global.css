@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,6 +23,28 @@
 
   /* Font properties */
   --font--lg: 700 2rem/1.25 var(--ff-poppins);
+  --font-base: 400 1rem/1.5 var(--ff-poppins);
   --font-md: 400 0.875rem/1.7 var(--ff-poppins);
   --font-sm: 400 0.75rem/1.7 var(--ff-poppins);
+}
+
+body {
+  font: var(--font-md);
+  color: var(--text-color-secondary);
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: normal;
+  cursor: pointer;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
 }

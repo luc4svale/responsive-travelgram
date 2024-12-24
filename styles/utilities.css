@@ -1,0 +1,47 @@
+.container {
+  --max-width: 47.9375rem;
+  --padding-inline: 1rem;
+
+  max-width: var(--max-width);
+  padding-inline: var(--padding-inline);
+  margin-inline: auto;
+}
+
+.desktop-only {
+  display: none;
+ }
+
+ .flex {
+  display: flex;
+ }
+
+ .justify-between {
+  justify-content: space-between;
+ }
+
+ .items-center {
+  align-items: center;
+ }
+
+ .gap-1 {
+  gap: 1rem;
+ }
+
+
+@media (min-width: 48em) {
+  .container {
+    --max-width: 63.9375rem;
+    --padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .container {
+    --max-width: 80rem;
+    --padding-inline: 2rem;
+  }
+
+  .desktop-only {
+    display: block;
+   }
+}
