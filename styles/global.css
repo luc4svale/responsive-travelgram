@@ -45,6 +45,11 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
 ul[role="list"] {
   list-style: none;
 }
