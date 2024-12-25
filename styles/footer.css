@@ -1,0 +1,20 @@
+body > footer {
+  --pading-block: 1rem;
+  padding-block: var(--pading-block);
+  
+  & span, & a {
+    line-height: 1.5;
+  }
+}
+
+@media ( 48rem <= width < 64rem) {
+  body > footer {
+    --pading-block: 1.25rem;
+  }
+}
+
+@media (width >= 64rem) {
+  body > footer {
+    --pading-block: 1.5rem;
+  }
+}
