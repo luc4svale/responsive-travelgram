@@ -1,0 +1,76 @@
+.bg-surface-color header {
+  padding-inline: 2rem;
+  gap: 2rem;
+
+  & .profile {
+    --profile-max-width: 100%;
+    max-width: var(--profile-max-width);
+
+    gap: 1rem;
+
+    & .avatar {
+      width: 7.5rem;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    & .info {
+      & h1 {
+        font: var(--font--lg);
+        color: var(--text-color-primary);
+      }
+
+      & p {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  & ul {
+    & .icon {
+      font-size: 1.5rem;
+      color: var(--brand-color);
+    }
+  }
+}
+
+@media (48rem <= width < 64rem) {
+  .bg-surface-color header {
+
+    & .profile {
+      gap: 1.5rem;
+
+      & .avatar {
+        width: 9rem;
+      }
+    }
+
+    & ul {
+      grid-auto-flow: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (width >= 64rem) {
+  .bg-surface-color header {
+    gap: unset;
+    justify-content: space-between;
+
+    & .profile {
+      --profile-max-width: 37rem;
+
+      gap: 2rem;
+
+      & .avatar {
+        width: 11rem;
+      }
+    }
+
+    & ul {
+      place-content: center;
+      width: 17.5rem;
+    }
+  }
+}

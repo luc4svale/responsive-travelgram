@@ -33,6 +33,10 @@ body {
   color: var(--text-color-secondary);
 }
 
+h1 {
+  font: inherit;
+  color: inherit;
+}
 
 a {
   text-decoration: none;
