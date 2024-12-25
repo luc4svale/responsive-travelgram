@@ -11,10 +11,6 @@
   background-color: var(--surface-color);
 }
 
-.bg-skeleton-color {
-  background-color: var(--skeleton-color);
-}
-
 .desktop-only {
   display: none;
  }
