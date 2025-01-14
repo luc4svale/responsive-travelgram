@@ -15,7 +15,7 @@
   }
 }
 
-@media (48rem <= width < 64rem) {
+@media (width >= 48rem) {
   nav {
     padding-block: 1.25rem;
   }

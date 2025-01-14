@@ -7,7 +7,7 @@ body > footer {
   }
 }
 
-@media ( 48rem <= width < 64rem) {
+@media ( width >= 48rem) {
   body > footer {
     --pading-block: 1.25rem;
   }

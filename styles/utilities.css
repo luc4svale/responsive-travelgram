@@ -51,7 +51,7 @@
   padding-block: 2rem;
  }
 
-@media (48rem <=width < 64rem) {
+@media (width >= 48rem) {
   .container {
     --max-width: 63.9375rem;
     --padding-inline: 1.5rem;

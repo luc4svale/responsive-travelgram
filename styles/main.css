@@ -13,7 +13,7 @@ body > main {
   }
 }
 
-@media (48rem <= width < 64rem) {
+@media (width >= 48rem) {
   body >main {
     --main-padding-block: 1.25rem;
     --main-gap: 1.25rem;
